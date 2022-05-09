@@ -7,11 +7,7 @@ on:
 
 env:
   BUCKET: a-test-bucket-19
-  TFSTATE_FILE: vpc.tfstate
- 
-
-
-
+  TFSTATE_FILE: vpc.tfstate 
 jobs:
   terraform:
     name: 'Terraform'
