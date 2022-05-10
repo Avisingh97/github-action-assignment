@@ -29,8 +29,6 @@ jobs:
     # - name: Terraform Format
     #     id: fmt
     #     run: terraform fmt -check
-
-    # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
