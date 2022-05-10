@@ -35,7 +35,8 @@ jobs:
       run: |
         cd example
         terraform init -reconfigure -backend-config="bucket=$BUCKET" -backend-config="key=$TFSTATE_FILE"
-     - name: Terraform destroy
-        run: |
-          cd example
-          terraform destroy -auto-approve 
+
+    - name: Terraform destroy
+      run: |
+        cd example
+        terraform destroy -auto-approve 
